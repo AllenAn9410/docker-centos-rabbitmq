@@ -1,6 +1,7 @@
 FROM centos
 MAINTAINER Dan Burke <dburke@addictmud.org>
 RUN yum update -y
+RUN yum install -y wget
 ADD http://packages.erlang-solutions.com/erlang-solutions-1.0-1.noarch.rpm /
 ADD http://www.rabbitmq.com/releases/rabbitmq-server/v3.3.4/rabbitmq-server-3.3.4-1.noarch.rpm /
 RUN yum install -y /erlang-solutions-1.0-1.noarch.rpm

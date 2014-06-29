@@ -1,4 +1,4 @@
 #!/bin/bash
 
-docker run -d -p 5672 -p 15672 dwburke/rabbitmq-3.3.4
+docker run -d -p 5672:5672 -p 15672:15672  dwburke/rabbitmq-3.3.4
 

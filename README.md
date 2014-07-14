@@ -6,3 +6,17 @@ If you're going to run more than one:
 
 # docker run -d -P dwburke/centos-rabbitmq-3.3.4
 
+
+Environment variables:
+
+RABBITMQ_USER
+RABBITMQ_PASS - required if RABBITMQ_USER is passed
+RABBITMQ_VHOST
+
+
+If RABBITMQ_USER is defined, the initial startup will remove the quest user
+and give this specificed user full access to RABBITMQ_VHOST (if defined)
+and the "/" vhost.
+
+RABBITMQ_USER also gets the "administrator" tag.
+

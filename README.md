@@ -9,9 +9,9 @@ If you're going to run more than one:
 
 Environment variables:
 
-RABBITMQ_USER
-RABBITMQ_PASS - required if RABBITMQ_USER is passed
-RABBITMQ_VHOST
+- RABBITMQ_USER
+- RABBITMQ_PASS - required if RABBITMQ_USER is passed
+- RABBITMQ_VHOST
 
 
 If RABBITMQ_USER is defined, the initial startup will remove the GUEST user

@@ -14,7 +14,7 @@ RABBITMQ_PASS - required if RABBITMQ_USER is passed
 RABBITMQ_VHOST
 
 
-If RABBITMQ_USER is defined, the initial startup will remove the quest user
+If RABBITMQ_USER is defined, the initial startup will remove the GUEST user
 and give this specificed user full access to RABBITMQ_VHOST (if defined)
 and the "/" vhost.
 

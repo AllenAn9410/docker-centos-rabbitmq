@@ -3,6 +3,7 @@
 if [ ! -d "/var/lib/rabbitmq/mnesia" ]; then
 
 	/usr/sbin/rabbitmq-server &
+	sleep 3
 	/usr/sbin/rabbitmqctl wait /var/lib/rabbitmq/mnesia/rabbit\@${HOSTNAME}.pid
 
 	if [ "$RABBITMQ_USER" ]; then

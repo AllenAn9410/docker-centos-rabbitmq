@@ -1,0 +1,11 @@
+rabbitmq:
+  build: .
+  environment:
+    RABBITMQ_VHOST: test
+    RABBITMQ_USER: testuser
+    RABBITMQ_PASS: abc123
+  ports:
+    - 15672
+    - 5672
+    - 25672
+

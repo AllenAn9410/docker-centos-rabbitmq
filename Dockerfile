@@ -5,5 +5,6 @@ RUN /usr/sbin/rabbitmq-plugins --offline enable rabbitmq_management
 RUN echo "[{rabbit,[{loopback_users,[]}]}]." > /etc/rabbitmq/rabbitmq.config
 EXPOSE 5672 15672 25672 4369
 RUN rm -f /.erlang.cookie
+RUN rm -rf /var/lib/rabbitmq/mnesia
 ADD start_server.sh /
 CMD /start_server.sh

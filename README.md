@@ -1,10 +1,10 @@
 If you're only running one RabbitMQ instance / container from this host:
 
-# docker run -d -p 5672:5672 -p 15672:15672 dwburke/centos-rabbitmq:3.5.6
+# docker run -d -p 5672:5672 -p 15672:15672 dwburke/centos-rabbitmq:3.5.7
 
 If you're going to run more than one:
 
-# docker run -d -P dwburke/centos-rabbitmq:3.5.6
+# docker run -d -P dwburke/centos-rabbitmq:3.5.7
 
 
 Environment variables:

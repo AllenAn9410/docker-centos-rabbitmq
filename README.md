@@ -10,8 +10,9 @@ If you're going to run more than one:
 Environment variables:
 
 - RABBITMQ_USER
-- RABBITMQ_PASS - required if RABBITMQ_USER is passed
+- RABBITMQ_PASS  - required if RABBITMQ_USER is passed
 - RABBITMQ_VHOST
+- PLUGIN_MQTT    - 0/1 to enable MQTT plugin
 
 
 If RABBITMQ_USER is defined, the initial startup will remove the GUEST user

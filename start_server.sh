@@ -7,6 +7,10 @@ if [ ! -d "/var/lib/rabbitmq/mnesia" ]; then
 	/usr/sbin/rabbitmqctl wait /var/lib/rabbitmq/mnesia/rabbit\@${HOSTNAME}.pid
 	/usr/sbin/rabbitmq-plugins enable rabbitmq_management
 
+	if [ "$PLUGIN_MQTT" ]; then
+		/usr/sbin/rabbitmq-plugins enable rabbitmq_mqtt
+	fi
+
 	if [ "$RABBITMQ_USER" ]; then
 		if [ ! "$RABBITMQ_PASS" ]; then
 			echo "RABBITMQ_PASS required with RABBITMQ_USER"
